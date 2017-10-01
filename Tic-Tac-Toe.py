@@ -31,11 +31,11 @@ class Players_turn(Players): #PROBLEM HERE
 
     def whos_turn(self):
         if self.turn == 1:
-            return Players.players_dic['p1_name'], '1'
+            return self.players_dic['p1_name'], '1'
         elif self.turn == 2:
-            return Players.players_dic['p2_name'], '2'
+            return self.players_dic['p2_name'], '2'
         else:
-            return '3', '3'
+            return 'incorrect', '3'
 
 
 
@@ -104,4 +104,4 @@ if __name__ == '__main__':
         sys.exit()
 
 game()
-                
+               
